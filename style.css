@@ -1,21 +1,14 @@
-/* Basis */
-* {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-/* Header */
 header {
   background-color: #1a1a1a;
   color: white;
-  padding: 20px 0;
+  padding: 20px;
   text-align: center;
 }
 
@@ -24,6 +17,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding: 0;
   margin-top: 10px;
 }
 
@@ -33,26 +27,28 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* Horizontale kaart */
-.card-horizontal {
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.infobox {
+  background-color: white;
   display: flex;
   gap: 30px;
-  background-color: white;
-  border-radius: 12px;
   padding: 30px;
-  max-width: 1000px;
-  margin: 40px auto;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  align-items: flex-start;
 }
 
-.card-horizontal img {
+.infobox .image img {
   width: 250px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+  border-radius: 10px;
 }
 
-.card-text {
+.infobox .info {
   flex: 1;
 }
 
@@ -66,11 +62,14 @@ h3 {
   color: #333;
 }
 
-/* Footer */
+ul {
+  padding-left: 20px;
+}
+
 footer {
   background-color: #1a1a1a;
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
